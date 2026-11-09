@@ -13,14 +13,14 @@ from email.mime.multipart import MIMEMultipart
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
-SENDER_EMAIL = "arnav2k20@gmail.com"
-RECEIVER_EMAIL = "aka608693@gmail.com"
+SENDER_EMAIL = "Sender's Email"
+RECEIVER_EMAIL = "Receiver's Email"
 
-APP_PASSWORD = "bktv gvfz ihvp rfxt"
+APP_PASSWORD = "app_password"
 
 # TEST CONFIGURATION
-TOTAL_EMAILS = 50
-MAX_WORKERS = 10
+TOTAL_EMAILS = 5
+MAX_WORKERS = 1
 
 SUBJECT = "SMTP Delivery Test"
 TEST_URL = "https://youtube.com"
@@ -51,7 +51,7 @@ This is a harmless automated email
 for testing my email filtering application.
 
 Test destination:
-{TEST_URL}
+RESET PASSWORD
 
 No action is required.
 
@@ -83,7 +83,7 @@ SMTP Testing Application
            font-size: 16px;
            font-weight: bold;
        ">
-       Click Me
+       RESET PASSWORD
     </a>
 
     <p>Test destination: {TEST_URL}</p>
