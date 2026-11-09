@@ -11,10 +11,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
-SENDER_EMAIL = "arnav2k20@gmail.com"
-RECEIVER_EMAIL = "aka608693@gmail.com"
+SENDER_EMAIL = "sender's mail"
+RECEIVER_EMAIL = "reciever's mail"
 
-APP_PASSWORD = "bktv gvfz ihvp rfxt"
+APP_PASSWORD = "app password"
 
 # TEST CONFIGURATION
 TOTAL_EMAILS = 50
