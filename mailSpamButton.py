@@ -4,6 +4,8 @@ import smtplib
 import uuid
 import time
 import logging
+import os
+from dotenv import load_dotenv
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from email.mime.text import MIMEText
@@ -13,10 +15,12 @@ from email.mime.multipart import MIMEMultipart
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
-SENDER_EMAIL = "Sender's Email"
-RECEIVER_EMAIL = "Receiver's Email"
+load_dotenv()
 
-APP_PASSWORD = "app_password"
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL")
+
+APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 
 # TEST CONFIGURATION
 TOTAL_EMAILS = 5
